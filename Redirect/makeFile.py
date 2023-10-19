@@ -1,0 +1,23 @@
+for i in range(2, 101):
+    filename = f"chall{i}.html"
+    with open(filename, "w") as file:
+        file.write("<!DOCTYPE html>\n")
+        file.write("<html>\n")
+        file.write("<head>\n")
+        file.write("<title>HTML File</title>\n")
+        file.write("</head>\n")
+        file.write("<body>\n")
+        file.write("<p>fake flag haha</p>\n")
+        file.write("<script>\n")
+        file.write("  // To prevent the right-click context menu\n")
+        file.write("  window.addEventListener('contextmenu', function(event) {\n")
+        file.write("    event.preventDefault();\n")
+        file.write("  });\n")
+        file.write("\n")
+        file.write("  // To prevent key events\n")
+        file.write("  document.addEventListener('keydown', function(event) {\n")
+        file.write("    event.preventDefault();\n")
+        file.write("  });\n")
+        file.write("</script>\n")
+        file.write("</body>\n")
+        file.write("</html>\n")

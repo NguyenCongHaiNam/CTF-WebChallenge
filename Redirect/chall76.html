@@ -5,5 +5,16 @@
 </head>
 <body>
 <p>fake flag haha</p>
+<script>
+  // To prevent the right-click context menu
+  window.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
+
+  // To prevent key events
+  document.addEventListener('keydown', function(event) {
+    event.preventDefault();
+  });
+</script>
 </body>
 </html>

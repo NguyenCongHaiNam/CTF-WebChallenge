@@ -3,7 +3,17 @@
 <head>
 <title>HTML File</title>
 </head>
-<body>
+<body><script>
+    // To prevent the right-click context menu
+    window.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
+
+    // To prevent key events
+    document.addEventListener("keydown", function(event) {
+      event.preventDefault();
+    });
+  </script>
     <p>Fake flag haha</p>
 <p style="color:white">You find part 2: 1dor_1s_s0_D4ng3r0u5</p>
 </body>
